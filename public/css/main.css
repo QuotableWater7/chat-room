@@ -1,0 +1,14 @@
+body {
+  background: #66bbff;
+}
+
+#room {
+  width: 400px;
+  height: 200px;
+  border-radius: 3px;
+}
+
+#message {
+  width: 400px;
+  border-radius: 3px;
+}
