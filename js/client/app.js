@@ -1,5 +1,7 @@
 'use strict';
 
+var io = require('socket.io-client');
+
 $(function () {
   var $container = $('#container');
   var socket = io.connect('http://localhost:8080');
