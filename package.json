@@ -24,6 +24,7 @@
     "webpack": "^1.12.15"
   },
   "devDependencies": {
+    "watchify": "^3.7.0",
     "webpack-dev-server": "^1.14.1"
   }
 }

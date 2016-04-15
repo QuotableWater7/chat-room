@@ -1,6 +1,10 @@
 'use strict';
 
 var io = require('socket.io-client');
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './components/app';
 
 $(() => {
   var $container = $('#container');
@@ -22,4 +26,9 @@ $(() => {
     socket.emit('send', { message: $message.val() });
     $message.val('');
   }
+
+  ReactDOM.render(
+    <App/>,
+    $('#react-test')[0]
+  );
 });
