@@ -56,7 +56,8 @@
 
 	  socket.on('message', function (data) {
 	    var text = $room.val() || '';
-	    $room.val(text + data.message + '\n').prop('scrollTop', $room.prop('scrollHeight'));
+	    $room.val(text + data.message + '\n');
+	    $room.prop('scrollTop', $room.prop('scrollHeight'));
 	  });
 
 	  $message.on('keyup', function (event) {
